@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+	<title>Ejercicios Extra</title>
+</head>
+<body>
+    <h2>(pagina 7)Ejercicio: #3 Sucesión de Fibonacci</h2>
+        <p>Realice un algoritmo para generar N elementos de la sucesión de Fibonacci (0,1,1,2,3,5,8,13...).
+        Realice el diagrama de flujo y el pseudocodigo para representarlo, utilizando el ciclo apropiado.</p>
+    <script type="text/javascript" src="script.js">
+        function Sucesionfibonacci(numeros) {
+	        if (numeros == 1){
+		        var resultado = [0];
+		        return resultado;
+	        } else if (numeros == 2) {
+		        var resultado = [0, 1];
+		        return resultado;
+	        }
+
+	        var fibonacci = [0, 1];
+	        for (var i=2; i < numeros; ++i){
+		        var nuevo = fibonacci [i-2] + fibonacci [i-1];
+		        fibonacci.push(nuevo);
+	        }
+ 	         return fibo;
+            }
+
+    </script>
+
+
+</body>
+</html>
